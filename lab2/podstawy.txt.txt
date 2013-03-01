@@ -1,0 +1,27 @@
+System kontoli wersji jest oprogramowaniem, które s³u¿y do œledzenia zmian g³ównie w kodzie Ÿród³owym oraz do pomocy programistom w po³¹czeniu zmian, które zosta³y dokonane przez wiele osób w ró¿nych momentach.
+
+Typowy "workflow" (sposób pracy) polega na:
+1) tworzeniu plików i modyfikowaniu ich w katalogu roboczym
+2) przeniesieniu plików do przechowalni, jeœli chcemy, aby zosta³y uwzglêdnione zmiany
+3) zatwierdzeniu zmian, gdy chcemy zachowaæ bie¿¹cy stan projektu.
+Mo¿na równie¿ pomin¹æ przeniesienie plików do przechowalni (s³u¿y do tego opcja -a operacji commit).
+
+Scentarlizowany system kontroli wersji równi siê tym od rozproszonego, ¿e istnieje w nim jedno centralne repozytorium, z którym wszyscy u¿ytkownicy systemu synchronizuj¹ swoje zmiany, a rozproszony system kontroli wersji pozwalaja na prowadzenie równoprawnych, niezale¿nych ga³êzi, które mo¿na dowolnie synchronizowaæ ze sob¹ nawzajem, powiewa¿ na ka¿dym komputerze jest pe³ne repozytorium.
+
+Polecenia:
+init - tworzenie repozytorium
+clone - klonuje repozytorium w nowym katalogu
+add - dodanie pliku do repozytorium, zmiana statusu pliku na tracked
+status - sprawdzenie statusu pliku, który mo¿e byæ tracked lub untracked
+diff - pokazuje zmiany, jakie zasz³y w pliku
+commit - zatwierdzanie zmian 
+reset - wycofanie zmiany z przechowalni
+rm - usuwa pliki z drzewa roboczego oraz z indeksem
+mv - przenosi lub zmienia nazwê pliku, katalogu lub dowi¹zania symbolicznego
+branch - tworzenie lub usuwanie ga³êzi
+checkout - wycofanie zmiany z katalogu roboczego (przed dodaniem do przechowalni)
+merge - ³¹czy dwie lub wiêcej historii rozwoju razem
+log - wyœwietla histori¹ zatwierdzania zmian
+stash - nagranie bie¿¹cego stanu katalogu roboczego i indeksem
+pull - pobiera i ³¹czy z innym repozytorium lub lokaln¹ ga³êzi¹
+push - aktualizowanie zdalne biblioteki wraz z obiektami powi¹zanymi
